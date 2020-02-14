@@ -14,7 +14,7 @@ public class NewService implements INewService {
 	
 	@Autowired
 	private INewDAO newDao;
-
+	
 	@Override
 	public List<NewModel> findAll() {
 		return newDao.findAll();

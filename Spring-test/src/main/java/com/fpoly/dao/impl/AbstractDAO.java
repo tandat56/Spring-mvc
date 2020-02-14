@@ -9,19 +9,21 @@ import java.sql.Statement;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ResourceBundle;
-
 import com.fpoly.dao.GenericDAO;
 import com.fpoly.mapper.RowMapper;
 
 public class AbstractDAO<T> implements GenericDAO<T> {
 
-	ResourceBundle resourceBundle = ResourceBundle.getBundle("db");
+	//ResourceBundle resourceBundle = ResourceBundle.getBundle("db");
 	
 	public Connection getConnection() {
 		try {
+			/*Class.forName(resourceBundle.getString("driverName"));
+			String url = resourceBundle.getString("url");
+			String user = resourceBundle.getString("user");
+			String password = resourceBundle.getString("password");*/
 			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/jsp_servlet";
+			String url = "jdbc:mysql://localhost:3306/jsp";
 			String user = "root";
 			String password = "";
 			return DriverManager.getConnection(url, user, password);
