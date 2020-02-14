@@ -3,7 +3,6 @@ package com.fpoly.dao.impl;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
-
 import com.fpoly.dao.INewDAO;
 import com.fpoly.mapper.NewMapper;
 import com.fpoly.model.NewModel;
@@ -13,7 +12,7 @@ public class NewDAO extends AbstractDAO<NewModel> implements INewDAO {
 	
 	@Override
 	public List<NewModel> findAll() {
-		StringBuilder sql = new StringBuilder("SELECT * FROM news");
-		return query(sql.toString(), new NewMapper());
+		String sql = "SELECT * FROM news";
+		return query(sql, new NewMapper());
 	}
 }

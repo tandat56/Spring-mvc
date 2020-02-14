@@ -23,11 +23,12 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 			String user = resourceBundle.getString("user");
 			String password = resourceBundle.getString("password");*/
 			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/jsp";
+			String url = "jdbc:mysql://localhost:3306/jsp?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 			String user = "root";
 			String password = "";
 			return DriverManager.getConnection(url, user, password);
 		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
 			return null;
 		}
 	}
