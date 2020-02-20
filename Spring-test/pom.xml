@@ -14,8 +14,12 @@
 		<jstl.version>1.2</jstl.version>
 		<mysql.version>8.0.13</mysql.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
+<<<<<<< HEAD
 		<spring.data>1.10.2.RELEASE</spring.data>
 		<springsecurity.version>3.2.8.RELEASE</springsecurity.version>
+=======
+		<spring.data>1.11.23.RELEASE</spring.data>
+>>>>>>> 7e9dc5767e9d7a76ff4f2a523aa393a5973b16e2
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
