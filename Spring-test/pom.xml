@@ -15,6 +15,7 @@
 		<mysql.version>8.0.13</mysql.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
 		<spring.data>1.10.2.RELEASE</spring.data>
+		<springsecurity.version>3.2.8.RELEASE</springsecurity.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -112,6 +113,22 @@
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
 			<version>${spring.data}</version>
+		</dependency>
+		<!-- spring security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${springsecurity.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${springsecurity.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-acl</artifactId>
+			<version>${springsecurity.version}</version>
 		</dependency>
 		
 	</dependencies>
