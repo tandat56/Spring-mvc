@@ -5,8 +5,7 @@
     <div class="footer-inner">
         <div class="footer-content">
 						<span class="bigger-120">
-							<span class="blue bolder">Le Tan Dat</span>
-							Application &copy; 2020 <3
+							<span class="blue bolder">laptrinhjavaweb.com</span>
 						</span>
 
             &nbsp; &nbsp;

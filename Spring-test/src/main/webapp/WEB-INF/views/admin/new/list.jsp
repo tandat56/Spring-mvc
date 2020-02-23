@@ -1,6 +1,4 @@
 <%@include file="/common/taglib.jsp"%>
-<c:url var="APIurl" value="/api-admin-new"/>
-<c:url var ="NewURL" value="/admin-new"/>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -14,6 +12,7 @@
 	<body>
 		<div class="main-content">
 		<form action="#" id="formSubmit" method="get">
+			
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
 						<ul class="breadcrumb">
@@ -27,11 +26,6 @@
 					<div class="page-content">
 						<div class="row">
 							<div class="col-xs-12">
-								<c:if test="${not empty messageResponse}">
-									<div class="alert alert-${alert}">
-  										${messageResponse}
-									</div>
-								</c:if>
 								<div class="widget-box table-filter">
 									<div class="table-btn-controls">
 										<div class="pull-right tableTools-container">
@@ -59,7 +53,6 @@
 											<table class="table table-bordered">
 												<thead>
 													<tr>
-														<th><input type="checkbox" id="checkAll"></th>
 														<th>Tên bài viết</th>
 														<th>Mô tả ngắn</th>
 														<th>Thao tác</th>
@@ -68,11 +61,9 @@
 												<tbody>
 													<c:forEach var="item" items="${model.listResult}">
 														<tr>
-															<td><input type="checkbox" id="checkbox_${item.id}" value="${item.id}"></td>
 															<td>${item.title}</td>
 															<td>${item.shortDescription}</td>
-															<td>
-																
+															<td>																
 																<a class="btn btn-sm btn-primary btn-edit" data-toggle="tooltip"
 																   title="Cập nhật bài viết" href='#'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 																</a>
@@ -80,7 +71,7 @@
 														</tr>
 													</c:forEach>
 												</tbody>
-											</table>								
+											</table>											
 										</div>
 									</div>
 								</div>
@@ -92,7 +83,7 @@
 		</div>
 		<!-- /.main-content -->
 		<script>
-			
+		
 		</script>
 	</body>
 

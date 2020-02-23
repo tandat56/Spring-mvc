@@ -44,7 +44,7 @@
             <b class="arrow"></b>
             <ul class="submenu">
                 <li>
-                    <a href="<c:url value='/quan-tri/bai-viet/danh-sach' />">
+                    <a href="<c:url value='/quan-tri/bai-viet/danh-sach'/>">
                         <i class="menu-icon fa fa-caret-right"></i>
                         DS bài viết
                     </a>
@@ -57,7 +57,3 @@
         <i class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
     </div>
 </div>
-
-
-
-
